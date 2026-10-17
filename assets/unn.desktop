@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=unn
+GenericName=Terminal
+Comment=A small and fast terminal written in assembly
+Exec=unn %F
+Icon=unn
+Terminal=false
+Categories=System;TerminalEmulator;Utility;
+MimeType=inode/directory;
+Keywords=terminal;shell;console;assembly;
+StartupWMClass=unn

@@ -1,0 +1,39 @@
+# unn's color scheme: embedded in the binary by tools/gen-assets.sh and parsed at startup
+# by src/app/theme.s. Lines are "key = #rrggbb"; '#' and ';' comments, blanks, unknown keys
+# and the bracketed headers (no '=' on them) are skipped, so sections are purely for the eye.
+# Anything not named here is derived by the theme system, so only deliberate colors appear.
+name = Unn
+kind = dark
+
+bg             = #101318
+fg             = #EAEFF5
+accent         = #E37B66
+panel          = #171c24
+border         = #0b0e12
+selection      = #2a3948
+line_highlight = #171c24
+line_number    = #55595e
+cursor         = #E37B66
+error          = #E37B66
+warning        = #E0A568
+success        = #8DA882
+
+# the terminal's 16-color palette; the parser reads these as ordinary slots, and the
+# blue/magenta/cyan hues also feed the editor's file-icon colors
+[terminal]
+black          = #222733
+red            = #E37B66
+green          = #8DA882
+yellow         = #E0A568
+blue           = #8999AA
+magenta        = #A58AA8
+cyan           = #809D9E
+white          = #C6CED8
+bright_black   = #98A0AE
+bright_red     = #F09A88
+bright_green   = #A9C29F
+bright_yellow  = #EBBE8A
+bright_blue    = #A5B3C2
+bright_magenta = #BFA6C2
+bright_cyan    = #9DB8B9
+bright_white   = #EAEFF5

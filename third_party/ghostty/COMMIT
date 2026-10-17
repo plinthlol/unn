@@ -1,0 +1,2 @@
+Pin: b3dc3d794513c11633e7c3347935693957744e83
+Built: 2026-10-16t13:29UTC | zig 0.16.0 | flags: -Demit-lib-vt -Dapp-runtime=none -Dcpu=baseline -Doptimize=ReleaseFast -Dsimd=false -Dtarget=x86_64-linux-none | archive 16M

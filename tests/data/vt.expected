@@ -1,0 +1,27 @@
+new 0
+set 0
+reply ^[[10;4R
+fmt 0
+Hello bold world
+green plain
+xxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxx
+
+
+
+
+
+  *
+0
+resize 0
+Hello bold world
+green plain
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+
+  *
+0
+live 2

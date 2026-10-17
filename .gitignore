@@ -1,0 +1,6 @@
+# build trees and object files, a local docs checkout, and OS/Python litter
+build/
+*.o
+docs/superpowers/
+.DS_Store
+__pycache__/
