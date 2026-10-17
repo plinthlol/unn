@@ -19,7 +19,7 @@ dist=0
 [ "${UNN_DIST:-}" = 1 ] && dist=1
 printf '.globl unn_version, unn_dist\nunn_version: .asciz "%s"\n.p2align 2\nunn_dist: .long %d\n' "$(cat VERSION)" "$dist"
 # one font for the interface and the terminal
-emit font_mono assets/fonts/IosevkaFixed-Regular.ttf
+emit font_mono assets/fonts/JetBrainsMonoNerdFontMono-Regular.ttf
 # font_ui is an alias of the same blob: one memory copy serves both, just two symbols
 printf '.globl font_ui, font_ui_end\n.set font_ui, font_mono\n.set font_ui_end, font_mono_end\n'
 # name table of runtime theme files: (name ptr, data ptr, data end); sorted in the C locale

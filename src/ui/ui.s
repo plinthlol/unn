@@ -341,28 +341,28 @@ FN ui_end
 FN ui_in
     xor eax, eax
     cmp dword ptr [rip + g_block], 0
-    jne 1f
+    jne 9f
     mov r8d, [rip + g_mx]
     mov r9d, [rip + g_my]
     cmp r8d, edi
-    jl 1f
+    jl 9f
     add edi, edx
     cmp r8d, edi
-    jge 1f
+    jge 9f
     cmp r9d, esi
-    jl 1f
+    jl 9f
     add esi, ecx
     cmp r9d, esi
-    jge 1f
+    jge 9f
     cmp r8d, [rip + g_cv + CV_cx0]
-    jl 1f
+    jl 9f
     cmp r8d, [rip + g_cv + CV_cx1]
-    jge 1f
+    jge 9f
     cmp r9d, [rip + g_cv + CV_cy0]
-    jl 1f
+    jl 9f
     cmp r9d, [rip + g_cv + CV_cy1]
-    jge 1f
-1:  # g_hole belongs to an element drawn later on this frame, so widgets
+    jge 9f
+    # g_hole belongs to an element drawn later on this frame, so widgets
     # drawn under it must not claim the pointer. (Only the registers this
     # clobbers anyway are used inside here.)
     mov eax, [rip + g_hole + 12]
@@ -383,7 +383,8 @@ FN ui_in
     xor eax, eax
     ret
 2:  mov eax, 1
-1:  ret
+    ret
+9:  ret
 
 # ui_btn(id=edi, x=esi, y=edx, w=ecx, h=r8d) -> eax UB_* bits (see unn.inc):
 # UB_HOVER when the pointer is over the box, UB_PRESS / UB_RPRESS / UB_CLICK

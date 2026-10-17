@@ -5,7 +5,7 @@
 # cfg_scroll_sens, or cfg_fast_sens (4x) while Alt is held; the term_* ones
 # weigh term_metrics and term_spawn (termview.s), the ui/font size ones weigh
 # the base UI code. Nothing reads cfg_font/cfg_ui_font/cfg_term_font —
-# app_load_fonts (app.s) hard-wires the built-in Iosevka for code and UI —
+# app_load_fonts (app.s) hard-wires the built-in JetBrainsMono Nerd Font for code and UI —
 # but the slots keep their intended meanings. .Lempty is the shared empty
 # string every cstr default points to.
 .include "unn.inc"
@@ -22,7 +22,7 @@ cfg_term_font_size: .long 18      # point size zoom resets to (range 8..40)
 cfg_term_line_height: .long 100   # line height in hundredths of ascent+descent
 cfg_term_scrollback: .long 10000  # scrollback lines a new terminal gets (TM_sbcap)
 .p2align 3
-cfg_font: .quad .Lempty           # code font, a monospace .ttf, empty = built-in Iosevka
+cfg_font: .quad .Lempty           # code font, a monospace .ttf, empty = built-in JetBrainsMono Nerd Font
 cfg_ui_font: .quad .Lempty        # UI font, empty = the code font
 cfg_term_shell: .quad .Lempty     # the shell to spawn, empty = $SHELL then /bin/sh
 cfg_term_font: .quad .Lempty      # the terminal's own font, empty = the code font

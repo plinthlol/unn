@@ -50,7 +50,7 @@ FN app_init
     call keys_init
     EPILOGUE
 
-# app_load_fonts(): the one embedded Iosevka (assets/fonts) serves everything:
+# app_load_fonts(): the one embedded JetBrainsMono Nerd Font (assets/fonts) serves everything:
 # it is loaded once into g_font_code and g_font_ui, and g_font_term stays 0,
 # the marker for termview.s' term_metrics to fall back to the code face.
 FN app_load_fonts
