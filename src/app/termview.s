@@ -799,7 +799,7 @@ FN term_panel_draw
     mov rbx, rax
     mov r12, [rbx + TS_term]
     # grid (the window's whole body: a small margin above, the theme's bg around)
-    M eax, MI_12
+    M eax, MI_4
     add eax, [rsp + 4]
     mov [rsp + 20], eax         # grid y
     mov ecx, [rsp + 4]
@@ -811,7 +811,7 @@ FN term_panel_draw
     jns 21f
     xor ecx, ecx
 21: mov [rsp + 28], ecx         # grid h
-    M eax, MI_12
+    M eax, MI_4
     mov ecx, [rsp]
     add ecx, eax
     mov [rsp + 16], ecx         # grid x
