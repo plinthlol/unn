@@ -18,7 +18,7 @@ cfg_fast_sens: .long 400          # the multiplier while Alt is held: 4.0x
 
 .globl cfg_term_font_size, cfg_term_scrollback, cfg_term_shell
 .globl cfg_term_line_height, cfg_term_font, cfg_font, cfg_ui_font
-cfg_term_font_size: .long 14      # point size zoom resets to (range 8..40)
+cfg_term_font_size: .long 18      # point size zoom resets to (range 8..40)
 cfg_term_line_height: .long 100   # line height in hundredths of ascent+descent
 cfg_term_scrollback: .long 10000  # scrollback lines a new terminal gets (TM_sbcap)
 .p2align 3
